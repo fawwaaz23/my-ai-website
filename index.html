@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My AI Website</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chef AI - Your Personal Cooking Assistant</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="header">
+    <h1>👨‍🍳 Chief AI</h1>
+    <p>Your AI-Powered Personal Cooking Assistant</p>
+  </div>
 
-<!-- Landing animation -->
-<div class="landing">
-  <div class="circle" onclick="showLogin()">Click Me!</div>
-</div>
+  <div class="tabs">
+    <button class="active">General</button>
+    <button>Recipes</button>
+    <button>Meal Plan</button>
+    <button>Tips</button>
+    <button>Substitutes</button>
+  </div>
 
-<!-- Google Login -->
-<div id="login" class="hidden">
-  <button class="login-btn" onclick="loginWithGoogle()">Login with Google</button>
-</div>
+  <div class="main">
+    <h2>👨‍🍳 Welcome to Chief AI!</h2>
+    <p>
+      I'm your personal cooking assistant powered by advanced AI. I can help you with:
+    </p>
+    <div class="features">
+      <p>🍕 Finding and creating delicious recipes</p>
+      <p>📋 Planning balanced meals for the week</p>
+    </div>
+  </div>
 
-<!-- Main Interface -->
-<div id="main" class="main-interface">
-  <h1>Welcome to Your AI Platform</h1>
-  <p>Start exploring features here!</p>
-</div>
+  <div class="chatbox">
+    <input type="text" id="userInput" placeholder="Ask me anything about cooking... (e.g., 'How do I make pasta carbonara?')" />
+    <button id="sendBtn">➤</button>
+  </div>
 
-<script src="script.js"></script>
+  <div class="footer">
+    <p>Powered by <b>Google Gemini AI</b> | Made with ❤️ for cooking enthusiasts</p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
