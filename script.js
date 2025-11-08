@@ -1,13 +1,7 @@
-function showLogin() {
-  document.querySelector('.landing').classList.add('hidden');
-  document.getElementById('login').classList.remove('hidden');
-}
+document.getElementById("sendBtn").addEventListener("click", () => {
+  const input = document.getElementById("userInput");
+  if (input.value.trim() === "") return;
 
-function loginWithGoogle() {
-  // Placeholder for Google login
-  alert("Google login successful!");
-  
-  // Hide login and show main interface
-  document.getElementById('login').classList.add('hidden');
-  document.getElementById('main').style.display = "flex";
-}
+  alert("You asked: " + input.value + "\n(This is where Chef AI would respond!)");
+  input.value = "";
+});
