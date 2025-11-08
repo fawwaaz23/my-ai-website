@@ -8,7 +8,6 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/')));
 
-// Endpoint to handle user questions
 app.post('/api/ask', async (req, res) => {
     const { question } = req.body;
     if(!question) return res.status(400).json({ error: "Question is required" });
